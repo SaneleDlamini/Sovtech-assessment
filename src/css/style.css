@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'Dosis', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+}
+nav {
+  background: #0D47A1;
+}
+nav ul {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+}
+
+nav li {
+  list-style: none;
+  padding: 25px 30px;
+}
+
+nav li a {
+  text-decoration: none;
+  display: inline;
+  color: #fff;
+  font-weight: bolder;
+}
+.active{
+  background-color: #BBDEFB;
+  padding: 25px 35px;
+}
+
+.home{
+  margin-top: 30px;
+  background-image: url(../images/background2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card{
+  width: 50%;
+  border: 2px solid #BBDEFB;
+  padding: 20px;
+  margin: 20px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: -20px;
+  position: relative;
+  animation: card;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  box-shadow: 4px 4px 4px 5px #BBDEFB;
+}
+
+.card:hover{
+  background-color: #0D47A1;
+  color: #fff;
+}
+
+.middle-card{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.middle-card-background{
+  background-color: #0D47A1;
+  color: #fff;
+  position: relative;
+  animation: card2;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+}
+
+.middle-card-background:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+.modal-button{
+  background-color: #BBDEFB;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+}
+
+.not-found{
+  color: red;
+  text-align: center;
+}
+
+.footer{
+  background-color: #0D47A1;
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-icon{
+  padding: 10px;
+}
+
+.footer a{
+  color: #fff;
+}
+
+/*Animation*/
+
+@keyframes card{
+  0%{
+     left: -400px;
+  }
+  100%{
+    left: 0px;
+  }
+}
+
+@keyframes card2{
+  0%{
+     right: -400px;
+  }
+  100%{
+    right: 0px;
+  }
+}
+
